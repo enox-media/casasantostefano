@@ -1,0 +1,39 @@
+/*********************************************************
+  Base Styling
+*********************************************************/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  background-color: $color__white;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body {
+  font-size: $font-size;
+  font-family: $font__body;
+  font-weight: 300;
+  line-height: 1.6;
+  color: $color__text;
+  overflow-x: hidden;
+}
+
+#page { // global WP page wrapper
+  position: absolute;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}

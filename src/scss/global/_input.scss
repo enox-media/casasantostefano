@@ -1,0 +1,138 @@
+/*********************************************************
+  Input
+*********************************************************/
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+label,
+.form > .form__label {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+input,
+textarea,
+select {
+  display: inline-block;
+  width: 100%;
+  height: 52px !important;
+  margin-bottom: rem(15);
+  padding-left: rem(10);
+  padding-right: rem(10);
+  font-family: inherit;
+  font-size: rem(15);
+  line-height: 1;
+  border: 1px solid $color__border;
+  border-radius: 0;
+  outline: none;
+  transition: 0.2s all ease-out;
+  &:focus,
+  &:active {
+    border-color: #333;
+  }
+}
+
+textarea {
+  max-width: 100%;
+  padding-top: rem(20);
+  min-height: rem(90);
+}
+
+// contact-form 7 styles
+.contact-form {
+  width: 100%;
+  input,
+  select,
+  textarea {
+    width: 100% !important;
+    border-radius: 0;
+  }
+
+  select {
+    appearance: none;
+    position: relative;
+    //margin-bottom: rem(20);
+    &:before {
+      content: "f0d7";
+      position: absolute;
+      left: 5px;
+    }
+  }
+  .btn-contact {
+    border: 0;
+  }
+}
+
+.contact-form__row {
+  display: flex;
+  @media (max-width: $tablet) {
+    flex-wrap: wrap;
+  }
+  &--end {
+    justify-content: flex-end;
+  }
+  &--center {
+    justify-content: center;
+  }
+}
+
+.contact-form__row div:not(:last-child) {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+
+.contact-form__col {
+  width: 100%;
+}
+
+// Contact Form 7 Specifics
+
+// Radio & Checkbox
+.wpcf7-radio,
+.wpcf7-checkbox {
+
+  .wpcf7-list-item {
+    margin: rem(15) 0;
+
+    label {
+      display: inline-block;
+
+      input[type="radio"],
+      input[type="checkbox"] {
+        display: none;
+      }
+
+      input[type="radio"] + span,
+      input[type="checkbox"] + span {
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 10px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        line-height: 1;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+      }
+
+      input[type="radio"]:checked + span,
+      input[type="checkbox"]:checked + span {
+        cursor: pointer;
+        border: 1px solid #fff;
+        background: #333;
+        color: white;
+      }
+    }
+  }
+}
+
+
+// CF7 Response
+.wpcf7-response-output {
+  font-size: 20px;
+}

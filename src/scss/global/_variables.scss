@@ -1,0 +1,49 @@
+/*********************************************************
+  Variables
+  @NOTE: variable naming is using BEM conventions
+*********************************************************/
+
+// generic color names
+$pink: #cf415b;
+$brown: #251d1c;
+$grey: #707070;
+$grey-light: #f9f9f9;
+$grey-dark: #555555;
+$black: #111111;
+$white: #ffffff;
+$red: #a02512;
+$green: #4bb14b;
+
+// brand colors
+$color__primary: $red;
+$color__secondary: $brown;
+$color__tertiary: $grey;
+$color__text: $black;
+$color__white: $white;
+$color__black: $black;
+
+// utility colors
+$color__error: $red;
+$color__success: $green;
+
+// shades
+$color__primary--dark: darken($color__primary, 7%);
+$color__secondary--dark: darken($color__secondary, 7%);
+$color__tertiary--dark: darken($color__tertiary, 7%);
+
+// borders
+$color__border: rgba($grey, 0.25);
+$color__border--light: $grey-light;
+$color__border--dark: $grey-dark;
+
+// fonts
+$font__heading: "Oswald", sans-serif;
+$font__body: "Oswald", sans-serif;
+$font-size: 1rem; //1rem == 16px
+
+// breakpoints
+$desktop-wide: 1171px;
+$desktop: 1025px;
+$tablet: 769px;
+$mobile: 481px;
+$phone: $mobile;

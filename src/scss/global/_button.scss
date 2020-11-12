@@ -1,0 +1,47 @@
+/*********************************************************
+  Button
+*********************************************************/
+/*
+.btn {
+  display: inline-block;
+  padding: rem(12) rem(24);
+  font-family: inherit;
+  font-size: $font-size;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+*/
+
+.btn--clear {
+  background: transparent;
+  color: $color__primary;
+  &:hover,
+  &:focus {
+    background: transparent;
+    color: $color__primary--dark;
+  }
+}
+
+.btn--small {
+  font-size: rem(14);
+  padding: rem(5) rem(10);
+}
+
+.btn--large {
+  font-size: rem(18);
+  padding: rem(15) rem(20);
+}
+
+.btn--disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.btn--block {
+  display: block;
+  max-width: 100%;
+}

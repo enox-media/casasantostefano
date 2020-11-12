@@ -1,0 +1,41 @@
+/*********************************************************
+  Main.scss == Table of Contents
+*********************************************************/
+
+/**
+  * -- GLOBAL/BASE
+  */
+@import 'global/variables';
+@import 'global/mixins';
+@import 'global/reset';
+@import 'global/base';
+@import 'global/fonts';
+@import 'global/typography';
+@import 'global/button';
+@import 'global/input';
+@import 'global/table';
+
+/**
+  * -- LAYOUT
+  */
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/section';
+@import 'layout/hero';
+
+/**
+  * -- COMPONENTS
+  */
+//@import 'components/modal';
+
+/**
+  * -- TEMPLATES
+  */
+//@import 'templates/single';
+
+/**
+  * -- STATES
+  */
+@import 'states/animation';
+@import 'states/utility';
